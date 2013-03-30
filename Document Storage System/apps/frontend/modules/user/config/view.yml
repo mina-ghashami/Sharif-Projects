@@ -1,0 +1,18 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Document management
+    robots:       index, follow
+    description:  Document Repository System
+    keywords:     document, repository
+    language:     en
+
+  stylesheets:    [main , user ]
+
+  javascripts:    [document ]
+
+  has_layout:     on
+  layout:         user_layout
+   

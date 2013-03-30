@@ -1,0 +1,47 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      User
+    theme:            default
+    
+    fields:
+       student_id:  {name: شماره دانشجویی}
+       first_name:  {name: نام}
+       last_name:   {name: نام خانوادگی}
+       email:       {name: پست الکترونیکی}
+       password:    {name: رمز عبور}
+       major:       {name: رشته تحصیلی}
+       level:       {name: مقطع تحصیلی}
+       credential:  {name: حق دسترسی}
+       phone:       {name: شماره تلفن}
+       created_at:  {name: زمان ثبت در سامانه}
+       note:        {name: پیغام}
+       
+    edit:
+      title: ویرایش مشخصات کاربر
+      fields:
+        note:  {params: rich=true tinymce_options=width:427,height:300 }
+        level:  {help:    مقادیر مجاز  bs ، ms و phd هستند}
+        credential:  {help:   مقادیر مجاز  user ، admin و designer هستند}
+        
+    
+    list:
+      filters:  [email]
+      title: فهرست کاربران 
+      display:  [first_name , last_name , =email , major , level , phone , credential , note , created_at]
+      object_actions:
+        _edit:   ~
+        _delete:  ~
+        view:  {name: View documents, action: view, icon: frontend/default_icon.png}
+        profile:  {name: View profile, action: profile, icon: frontend/user.png}
+      actions: 
+        _create:   ~
+      max_per_page:   10
+    
+#    fields:
+#      user{email}:
+#        required:
+#          msg:  فیلد ایمیل باید پر شود
+#        sfStringValidator:
+#        sfEmailValidator:
+#          email_error:  این ایمیل معتبر نیست ، لطفا ایمیل صحیح را وارد کنید

@@ -1,0 +1,1 @@
+<?php include_partial('design/input',array('typeId'=>$typeId)) ?>

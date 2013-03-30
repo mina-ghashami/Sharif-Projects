@@ -1,0 +1,45 @@
+
+#row_0{
+	
+padding-top: 4px;
+  padding-bottom: 4px;
+  text_align:center;
+  padding-left: 1px;
+  padding-right: 1px;
+
+ }
+ 
+#row_1{
+ 
+ background-color: #eef;
+  padding: 4px;
+  text_align:center;
+  }
+  
+#th{
+	background-color: #CCCCFF; 
+	padding: 3px;
+	text-align: center;
+}
+#banner{
+	margin-top: 0px;
+	height: 150px;
+	width: 900px;	
+}
+
+#docList{
+	border-color: #DDDDDD ; 
+	border-style: solid none solid solid;
+    border-width: 1px 0 1px 1px ; 
+    direction: rtl;
+    text-align: center;
+    width:80%;
+	}
+
+#h1{
+	margin-bottom: 20px;margin-top: 10px;margin-right: 8px;
+	}	
+#header{
+	width: 100%;
+	
+	}		

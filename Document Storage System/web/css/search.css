@@ -1,0 +1,69 @@
+#td
+{
+	font-size: 18px;
+	border: 1px solid red;
+	padding: 5px;
+	
+	
+}
+#banner{
+	margin-top: 0px;
+	height: 150px;
+	width: 900px;	
+}
+#search_tabs{
+
+}
+
+#search_tabs td{
+	font-size: 16px;
+	font-weight: bold;	
+	background-image:url(../images/body.jpg); 
+	background-repeat: repeat;
+}
+#search_tabs a{
+	color: black;
+}
+a{
+	
+}
+
+
+#table
+{
+	border: 1px solid red;
+	
+}
+
+#right_div
+{
+	padding: 20px;
+	margin-right: -1000px;
+	float: left;
+}
+.th
+{
+	border: 1px solid red;
+	font-size: 18px;	
+	padding: 5px;	
+}
+
+.td_show
+{
+	border: 1px solid pink;	
+	padding: 5px;
+	
+}
+
+#search_button
+{
+	float: left;
+	margin-right: -9000px;
+	margin-left: 400px;
+}
+
+#footer
+{
+	font-size: 20px;
+	
+}

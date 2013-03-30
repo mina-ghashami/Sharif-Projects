@@ -1,0 +1,25 @@
+fillin:
+  enabled:  true
+
+
+fields:
+  name:
+    required:
+      msg:  فیلد نام باید پر شود.
+    sfStringValidator:
+      min:  2
+      min_error:  نام وارد شده کوتاه است (حداقل 2 کاراکتر باید باشد)
+      max:  100
+      max_error:  نام وارد شده طولانی است (حداکثر 100 کاراکتر می تواند باشد)
+  rank:
+    required:
+      msg:  فیلد ترتیب باید پر شود.
+    sfNumberValidator:
+      nan_error:  لطفا یک عدد وارد کنید.
+      min:  1
+      min_error:  عددی که وارد میکنید باید بیشتر از 1 باشد.
+      max:  100
+      max_error:  عددی که وارد میکنید باید کمتر از 100 باشد.
+  values:
+    required:
+      msg:  فیلد مقادیر باید پر شود.        

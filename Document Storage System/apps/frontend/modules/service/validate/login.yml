@@ -1,0 +1,14 @@
+fields:
+    username: 
+        required: 
+            msg: برای ورود باید پست الکترونیکی خود را وارد نمایید.
+        sfEmailValidator:
+            strict:   true
+            email_error: پست الکترونیکی وارد شده صحیح نمی باشد.            
+                          
+    password: 
+        required: 
+            msg: رمز خود را وارد نکرده اید.
+        sfStringValidator:
+            min: 6
+            min_error: رمز وارد شده از 6 حرف کوتاه تر است.             

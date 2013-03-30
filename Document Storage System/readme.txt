@@ -1,0 +1,1 @@
+In this system, you were able to define a new document type with a set of new fields, add, edit or remove documents, maintain documents of any type, do search on a specific type of documents and do the report on results.

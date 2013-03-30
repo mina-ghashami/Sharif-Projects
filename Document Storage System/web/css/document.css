@@ -1,0 +1,62 @@
+@CHARSET "ISO-8859-1";
+body{
+	
+	font-size: 24px;
+	background-image:url(../images/body.jpg); 
+	background-repeat: repeat;
+}
+#page_document{
+	font-size:18px;
+	
+	width: 900px;
+	background-image:url(../images/content_service_index.jpg); 
+	background-repeat: repeat;
+	color: white;
+	bottom: 0px;
+}
+#document_content{
+	text-align:right;
+	padding-right: 30px;
+}
+td{
+	background-image:url(../images/content_service_index.jpg); 
+	background-repeat: repeat;
+}
+
+#document_tabs td{
+	font-size: 16px;
+	font-weight: bold;
+}
+#document_tabs a{
+	color: white;
+}
+a{
+	color: white;
+}
+
+#doc_tabs{
+	
+}
+#doc_tabs tr{
+	
+	
+}
+#doc_tabs th{
+	border: 3px double;
+	font-size: 18px;
+	text-align: center;
+}
+#doc_tabs td{
+	font-size: 15px;
+	border: 1px solid white;
+	height: 20px;
+}
+#banner{
+	margin-top: 0px;
+	height: 150px;
+	width: 900px;	
+}
+#toEdit{
+	
+	padding: 20px; 
+}

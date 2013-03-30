@@ -1,0 +1,36 @@
+@CHARSET "ISO-8859-1";
+body{
+	direction: rtl;
+	
+}
+#date{
+	font-size: 17px;
+	font-weight: bold;
+}
+#report th {
+	border: 3px purple double;
+	color: purple;
+	font-family:times new romans;
+	font-weight:bold;
+	font-size: 19px; 
+	text-align: center; 
+	padding-bottom: 5px;
+	padding-top: 5px; 
+	padding-left: 15px; 
+	padding-right: 15px;
+	background-color: #FBD3F1;   
+}
+#report td {
+	border: 1px purple solid;
+	color: purple;
+	background-color: #FBE5F1;
+	font-size: 18px;
+	text-align: center; 
+}
+#report table {
+	background-color: #FBD3F1;
+}
+#mehran{
+	font-size:20px; 
+	color: yellow;
+}

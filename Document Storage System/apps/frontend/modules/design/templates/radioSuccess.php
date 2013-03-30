@@ -1,0 +1,1 @@
+<?php include_partial('design/radio',array('typeId'=>$typeId)) ?>

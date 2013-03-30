@@ -1,0 +1,31 @@
+@CHARSET "ISO-8859-1";
+
+#banner{
+	margin-top: 0px;
+	height: 150px;
+	width: 900px;	
+}
+#type_content{
+
+	font-size:18px;
+	
+	width: 900px;
+	background-image:url(../images/content_service_index.jpg); 
+	background-repeat: repeat;
+	color: white;
+	bottom: 0px;
+}
+#type_tabs{
+
+}
+#type_tabs td{
+	font-size: 16px;
+	font-weight: bold;
+		background-image:url(../images/content_service_index.jpg); 
+	background-repeat: repeat;
+}
+#type_tabs a{
+	
+
+	color: white;
+}

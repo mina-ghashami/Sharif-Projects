@@ -1,0 +1,60 @@
+propel:  
+    user:
+      _attributes:   { phpName: User}
+      id:            { type: integer, required: true, primaryKey: true, autoIncrement: true }
+      student_id:    { type: varchar(8) }
+      first_name:    { type: varchar(255), default: '' }
+      last_name:     { type: varchar(255), default: '' }
+      email:         { type: varchar(255), required: true }
+      password:      { type: varchar(255), required: true }
+      major:         { type: varchar(100)}
+      level:         { type: varchar(20), default: 'bs'}
+      phone:         { type: varchar(20)}
+      credential:    { type: varchar(255), required: true, default: 'user' }
+      note:          { type: longvarchar }
+      created_at:    { type: timestamp, required: true}
+    type :
+      _attributes:   { phpName: Type }   
+      id:            { type: integer, required: true, primaryKey: true, autoIncrement: true }
+      name:          { type: varchar(255), required: true}
+         
+    document :
+      _attributes:   { phpName: Document}
+      id:            { type: integer, required: true, primaryKey: true, autoIncrement: true }
+      type_id:       { type: integer, foreignTable: type , foreignReference: id, onDelete: cascade, required: true }
+      user_id:       { type: integer, foreignTable: user , foreignReference: id, onDelete: cascade, required: true }
+      path:          { type: varchar(255), required: true}
+      created_at:    { type: timestamp, required: true}
+      
+    shared :
+      _attributes:   { phpName: Shared}
+      doc_id:        { type: integer, foreignTable: document , foreignReference: id, onDelete: cascade, required: true }
+      user_id:       { type: integer, foreignTable: user , foreignReference: id, onDelete: cascade, required: true }
+      _uniques:
+        id:          [ doc_id , user_id]
+        
+    attr:
+      _attributes:   { phpName:  Attribute}
+      id:            { type: integer, required: true, primaryKey: true, autoIncrement: true }
+      type_id:       { type: integer, foreignTable: type , foreignReference: id, onDelete: cascade, required: true }
+      name:          { type: varchar(255), required: true}
+      tag:           { type: varchar(255), required: true}
+      rank:          { type: integer, required: true}
+      required:      { type: boolean, default: false}
+      inReport:      { type: boolean, default: true}
+      inSearch:      { type: boolean, default: true}
+        
+    attr_limit :
+      _attributes:   { phpName : Limit}
+      id:            { type: integer, required: true, primaryKey: true, autoIncrement: true }
+      attr_id:       { type: integer, required: true, foreignTable: attr, foreignReference: id, onDelete: cascade }
+      limitation:    { type: varchar(255)}
+      
+    value : 
+      _attributes:   { phpName: Value }
+      doc_id:        { type: integer, required: true, foreignTable: document, foreignReference: id, onDelete: cascade }
+      attr_id:       { type: integer, required: true, foreignTable: attr, foreignReference: id, onDelete: cascade } 
+      val:           { type: varchar(255) }
+      _uniques:
+        id:          [ doc_id , attr_id]
+               

@@ -1,0 +1,19 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Type
+    theme:            default
+
+    fields:
+       id:  {name: شماره }
+       name:  {name: نام}
+
+
+    list:
+      display:  [id , =name] 
+      object_actions:
+        _edit:   ~
+        _delete:  ~
+      actions: 
+        _create:   ~
+      max_per_page:   10

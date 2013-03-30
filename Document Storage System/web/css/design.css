@@ -1,0 +1,54 @@
+body
+{
+	direction: rtl;
+	font-size: 15px;
+	text-align: center;
+	font-size: 24px;
+	background-image:url(../images/body.jpg); 
+	background-repeat: repeat;
+	
+		
+}
+#page_design{
+	font-size:18px;
+	
+	width: 900px;
+	background-image:url(../images/content_service_index.jpg); 
+	background-repeat: repeat;
+	color: white;
+	bottom: 0px;
+}
+#td
+{
+	font-size: 18px;
+	border: 1px solid red;
+	color: red;
+	padding: 5px;
+	
+}
+td{
+	background-image:url(../images/content_service_index.jpg); 
+	background-repeat: repeat;
+}
+
+
+
+#table
+{
+	direction: rtl;
+	border: 1px solid red;
+}
+
+#banner{
+	margin-top: 0px;
+	height: 150px;
+	width: 900px;	
+}
+
+#design_tabs td{
+	font-size: 16px;
+	font-weight: bold;
+}
+#design_tabs a{
+	color: white;
+}
